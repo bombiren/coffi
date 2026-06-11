@@ -1,0 +1,152 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body{
+    background:#E8E8E8;
+}
+
+
+
+nav{
+    background:#9A5D32;
+    padding:15px;
+}
+
+nav ul{
+    display:flex;
+    list-style:none;
+    gap:20px;
+}
+
+nav a{
+    color:white;
+    text-decoration:none;
+    font-weight:bold;
+}
+
+
+
+header{
+    background:#B48C70;
+    height:120px;
+    position:relative;
+}
+
+.logo-box{
+    position:absolute;
+    right:0;
+    top:0;
+    width:40%;
+    height:120px;
+    background:#9A5D32;
+    border-bottom-left-radius:60px;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+}
+
+.logo-box h1{
+    color:white;
+    font-size:48px;
+}
+
+
+
+main{
+    display:flex;
+    justify-content:space-between;
+    padding:30px;
+    background:#E8DEB8;
+}
+
+.calculator{
+    width:55%;
+}
+
+.calculator h2{
+    color:#774620;
+    margin-bottom:15px;
+}
+
+.form-box{
+    background:#B48C70;
+    padding:15px;
+    width:100%;
+}
+
+.form-box label{
+    display:block;
+    color:white;
+    margin-top:10px;
+    margin-bottom:5px;
+}
+
+.form-box input{
+    width:100%;
+    padding:10px;
+    border:none;
+    border-radius:4px;
+}
+
+.result{
+    margin-top:15px;
+    display:flex;
+    align-items:center;
+    gap:10px;
+}
+
+.result button{
+    background:#89DF7F;
+    border:none;
+    padding:10px 20px;
+    cursor:pointer;
+    font-weight:bold;
+}
+
+.result span{
+    color:white;
+    font-weight:bold;
+}
+
+
+
+.menu{
+    width:35%;
+}
+
+.menu h3{
+    color:#774620;
+    margin-bottom:10px;
+}
+
+.menu ul{
+    margin-left:20px;
+    margin-bottom:30px;
+}
+
+.menu li{
+    margin-bottom:5px;
+    font-weight:bold;
+}
+
+.order-btn{
+    width:100%;
+    padding:12px;
+    background:#9A5D32;
+    color:white;
+    border:none;
+    cursor:pointer;
+    font-size:18px;
+}
+
+
+
+footer{
+    background:#E8DEB8;
+    padding:10px;
+    color:#774620;
+}
