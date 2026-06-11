@@ -1,0 +1,137 @@
+<?php
+require_once("db.php");
+
+$price = "";
+
+if(isset($_POST['process'])){
+
+    $coffee = $_POST['coffee'];
+    $weight = (int)$_POST['weight'];
+
+    $sql = "SELECT price FROM menu WHERE name='$coffee'";
+    $result = mysqli_query($conn,$sql);
+
+    if(mysqli_num_rows($result) > 0){
+
+        $row = mysqli_fetch_assoc($result);
+
+        $price = ($row['price'] * $weight) / 1000;
+        $price = number_format($price,2)." zł";
+    }
+    else{
+        $price = "Coffee not found";
+    }
+}
+?>
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<link href="https://fonts.googleapis.com/css2?family=Baloo+2:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+<link rel="stylesheet" href="style.css">
+
+<title>Coffi</title>
+</head>
+<body>
+
+<header>
+
+    <div class="menu-top">
+        <a href="#">Home</a>
+        <a href="#">Orders</a>
+        <a href="#">Blog</a>
+        <a href="#">Coffe types</a>
+    </div>
+
+    <div class="logo-section">
+        <div class="circle1"></div>
+        <div class="circle2"></div>
+
+        <h1>Coffi ☕</h1>
+    </div>
+
+</header>
+
+<main>
+
+<section class="left">
+
+    <h2>Calculate your order</h2>
+
+    <form method="POST" class="calculator">
+
+        <label>Enter coffe name</label>
+
+        <input
+            type="text"
+            name="coffee"
+            required
+            placeholder="[value]"
+        >
+
+        <label>Enter coffe weight</label>
+
+        <input
+            type="number"
+            name="weight"
+            required
+            placeholder="[value]"
+        >
+
+        <div class="result-box">
+
+            <button
+                type="submit"
+                name="process"
+            >
+                Process
+            </button>
+
+            <span>
+                Order price:
+                <?= $price ?>
+            </span>
+
+        </div>
+
+    </form>
+
+</section>
+
+<aside class="right">
+
+    <h3>Menu</h3>
+
+    <ul>
+
+        <?php
+
+        $sql = "SELECT name FROM menu";
+        $result = mysqli_query($conn,$sql);
+
+        while($row = mysqli_fetch_assoc($result)){
+            echo "<li>".$row['name']."</li>";
+        }
+
+        ?>
+
+    </ul>
+
+    <button class="order-btn">
+        Order it!
+    </button>
+
+</aside>
+
+</main>
+
+<footer>
+    © 2024, Coffi
+</footer>
+
+</body>
+</html>
