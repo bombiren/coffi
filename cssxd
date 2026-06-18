@@ -1,0 +1,188 @@
+
+* {
+    font-family: "Jua", sans-serif;
+}
+
+body {
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    background-color: #e8e8e8;
+    align-items: center;
+    margin: 0;
+}
+
+#top {
+    height: 15%;
+    width: 100%;
+    background-color: #9a5d32;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+    padding: 0;
+}
+
+#nav {
+    flex: 1;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+a {
+    font-family: "Jua";
+    color: white;
+    text-decoration: none;
+    font-size: 50px;
+}
+
+#main {
+    flex: 1;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    gap: 20px;
+}
+
+#mid {
+    flex: 1;
+    font-family: "Jua";
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+#mid > h2 {
+    color: #9a5d32;
+    font-size: 40px;
+    text-align: center;
+}
+
+#bg {
+    background-color: #b48c70;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border-radius: 10px;
+    height: 500px;
+    width: 1000px;
+}
+
+#mid2 {
+    flex: 1;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+#mid2 > h2 {
+    color: #e8e8e8;
+    text-align: center;
+    font-size: 35px;
+}
+
+.xd {
+    width: 90%;
+    height: 30%;
+    background-color: #e8e8e8;
+    border-radius: 10px;
+}
+
+#mid3 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 100px;
+    height: 200px;
+    width: 800px;
+}
+#mid3 > h2 {
+    color: #e8e8e8;
+    font-size: 40px;
+}
+
+#process {
+    background: #6ba368;
+    color: white;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+    font-size: 50px;
+    font-family: "Jua";
+    width: 110%;
+    height: 60%;
+}
+#logo {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#logo > h1,
+#logo > #kawa {
+    color: #e8e8e8;
+    position: absolute;
+    font-size: 100px;
+    font-family: "Jua";
+}
+
+#kawa {
+    left: 90%;
+}
+
+#right {
+    flex: 1;
+    height: 100%;
+    background-color: #f5deb3;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    max-width: 500px;
+}
+#right > h2 {
+    font-family: "Lemon", serif;
+    color: #9a5d32;
+    font-size: 60px;
+    height: 49px;
+}
+#order {
+    background: #9a5d32;
+    color: #e8e8e8;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+    font-size: 50px;
+    font-family: "Jua";
+    width: 70%;
+    height: 16.5%;
+}
+#right > ul {
+    font-family: "Jua";
+    color: #9a5d32;
+    font-size: 40px;
+}
+
+#footer {
+    height: 10%;
+    width: 100%;
+    background-color: #f5deb3;
+    display: flex;
+    align-items: center;
+}
+
+#footer > #text {
+    font-family: "Jua";
+    color: #9a5d32;
+}
+
+@import url("https://fonts.googleapis.com/css2?family=Jua&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Lemon&display=swap");
