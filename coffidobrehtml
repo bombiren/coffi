@@ -1,0 +1,65 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="stylesheet" href="stylexdd.css" />
+        <title>Document</title>
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Jua&family=Lemon&display=swap"
+            rel="stylesheet"
+        />
+    </head>
+    <body>
+        <div id="gora">
+            <div id="nav">
+                <a href="#">Home</a>
+                <a href="#">Orders</a>
+                <a href="#">Blog</a>
+                <a href="#">Coffe type</a>
+            </div>
+            <div id="logo">
+                <h1 id="logotext">Coffi</h1>
+
+                <img src="hdkjflasdkjfasdf.png" alt="logo" />
+            </div>
+        </div>
+
+        <div id="glowne">
+            <div id="srodek">
+                <h2>Calculate your order</h2>
+                <div id="bg">
+                    <div id="srodek2">
+                        <h2>Enter coffee name</h2>
+                        <div class="xd"></div>
+                        <h2>Enter coffee weight</h2>
+                        <div class="xd"></div>
+                    </div>
+                    <div id="srodek3">
+                        <button id="process">Process</button>
+                        <h2>Order price:</h2>
+                    </div>
+                </div>
+            </div>
+            <div id="right">
+                <h2>Menu</h2>
+                <ul>
+                    <li>Arabica</li>
+                    <li>Robusta</li>
+                    <li>Green</li>
+                    <li>Mocha</li>
+                    <li>No-caffeine</li>
+                </ul>
+                <button id="order">Order it!</button>
+            </div>
+        </div>
+
+        <div id="footer">
+            <div id="text">
+                <h2>© 2024 Coffi</h2>
+            </div>
+        </div>
+    </body>
+</html>
